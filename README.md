@@ -52,14 +52,19 @@ setInterval(() => {
     window.scrollTo(0, document.body.scrollHeight);
   }
   setTimeout(() => {
-    let b = document.querySelector("div[data-testid=\"Dropdown\"]:first-of-type > div:first-child");
-    b.scrollIntoView({block: 'center'});
-    b.click();
+    let b = document.querySelectorAll("div[data-testid=\"Dropdown\"]:first-of-type > div:first-child");
+    b.forEach((c) => {
+      c.scrollIntoView({block: 'center'});
+      if (c.textContent.includes('Delete')) {
+        c.click();
+        break;
+      }
+    });
   }, 500);
   setTimeout(() => {
-    let c = document.querySelector("div[data-testid=\"confirmationSheetConfirm\"]:first-of-type");
-    c.scrollIntoView({block: 'center'});
-    c.click();
+    let d = document.querySelector("div[data-testid=\"confirmationSheetConfirm\"]:first-of-type");
+    d.scrollIntoView({block: 'center'});
+    d.click();
   }, 500);
 }, 1000);
 ```
