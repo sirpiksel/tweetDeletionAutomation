@@ -53,13 +53,14 @@ setInterval(() => {
   }
   setTimeout(() => {
     let b = document.querySelectorAll("div[data-testid=\"Dropdown\"]:first-of-type > div:first-child");
-    b.forEach((c) => {
+    for (let i = 0; i < b.length; i++) {
+      let c = b[i];
       c.scrollIntoView({block: 'center'});
       if (c.textContent.includes('Delete')) {
         c.click();
         break;
       }
-    });
+    }
   }, 500);
   setTimeout(() => {
     let d = document.querySelector("div[data-testid=\"confirmationSheetConfirm\"]:first-of-type");
