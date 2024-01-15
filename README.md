@@ -1,5 +1,5 @@
 # Tweet Deletion Automation #
-> Doing it the DIY way.
+> Approaching it the DIY way.
 
 ## Usage
 1. Open the Page instructed in the [Action](#Actions) you intend to use.
