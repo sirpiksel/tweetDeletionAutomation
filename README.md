@@ -41,6 +41,7 @@ Change the numbers on the lines A1 and B1 to change the pace of the respective e
 
 ## Actions
 ### Delete Tweets
+> [!IMPORTANT]
 > Open your Profile with the Tweets tab open.
 ```
 setInterval(() => {
@@ -71,6 +72,7 @@ setInterval(() => {
 ```
 
 ### Delete Retweets
+> [!IMPORTANT]
 > Open your Profile with the Tweets tab open.
 ```
 setInterval(() => {
@@ -90,6 +92,7 @@ setInterval(() => {
 ```
 
 ### Delete Likes
+> [!IMPORTANT]
 > Open your Profile and open the Likes tab.
 ```
 setInterval(() => {
